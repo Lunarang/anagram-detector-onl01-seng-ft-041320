@@ -6,14 +6,14 @@ class Anagram
   end
 
   def match (array)
+    none = []
     array.each do |anagram|
       if @word.split("").sort == anagram.split("").sort 
         anagram
       else
-        array.clear
+        none
       end 
     end
-    
   end 
   
 end
