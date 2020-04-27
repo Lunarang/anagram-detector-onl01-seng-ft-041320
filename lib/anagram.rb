@@ -6,9 +6,7 @@ class Anagram
   end
 
   def match (array)
-    
     array.each do |anagram|
-      anagram = anagram.split("")
       if @word == anagram.sort 
         anagram
       else
