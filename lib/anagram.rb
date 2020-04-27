@@ -9,12 +9,12 @@ class Anagram
     none = []
     array.each do |anagram|
       if @word.split("").sort == anagram.split("").sort 
-        anagram
+        @answer = anagram
       else
         none
       end 
     end
   end 
-  
+  @answer
 end
 
