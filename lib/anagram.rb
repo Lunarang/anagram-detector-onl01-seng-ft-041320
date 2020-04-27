@@ -2,12 +2,12 @@ class Anagram
   attr_accessor :word 
   
   def initialize (word)
-    @word = word.split("").sort
+    @word = word
   end
 
   def match (array)
     array.each do |anagram|
-      if @word == anagram.split("").sort 
+      if @word.split("") == anagram.split("").sort 
         anagram
       else
         array.clear
