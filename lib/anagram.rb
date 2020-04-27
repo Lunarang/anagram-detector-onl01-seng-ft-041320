@@ -6,15 +6,10 @@ class Anagram
   end
 
   def match (array)
-    none = []
-    array.each do |anagram|
-      if @word.split("").sort == anagram.split("").sort 
-        @answer = anagram
-      else
-        none
-      end 
+    word_array.select do |word|
+      word.split("").sort == @word.split("").sort
     end
-  end 
-  @answer
+  end
+  
 end
 
