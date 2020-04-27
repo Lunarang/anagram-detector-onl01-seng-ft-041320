@@ -15,5 +15,7 @@ class Anagram
         array.clear
       end 
     end
+  end 
+  
 end
 
